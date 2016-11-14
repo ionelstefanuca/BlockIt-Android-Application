@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nume:"
+        android:id="@+id/myList_nume"
+        android:layout_alignTop="@+id/stanga"
+        android:layout_toRightOf="@+id/stanga"
+        android:layout_toEndOf="@+id/stanga"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numar Telefon:"
+        android:id="@+id/myList_numarTel"
+        android:layout_below="@+id/myList_nume"
+        android:layout_alignLeft="@+id/myList_nume"
+        android:layout_alignStart="@+id/myList_nume"
+        android:textColor="#ffffff" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentStart="true"
+        android:id="@+id/stanga"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/space2" />
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:id="@+id/myList_btn"
+        android:background="@drawable/button_delete"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_alignBottom="@+id/space"
+        android:layout_alignTop="@+id/myList_nume" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space"
+        android:layout_alignBottom="@+id/myList_numarTel" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignRight="@+id/myList_btn"
+        android:layout_alignEnd="@+id/myList_btn"
+        android:layout_below="@+id/myList_numarTel"
+        android:layout_toRightOf="@+id/stanga"
+        android:layout_toEndOf="@+id/stanga"
+        android:id="@+id/space3" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/myList_btn"
+        android:layout_alignEnd="@+id/myList_btn"
+        android:id="@+id/space2" />
+
+</RelativeLayout>

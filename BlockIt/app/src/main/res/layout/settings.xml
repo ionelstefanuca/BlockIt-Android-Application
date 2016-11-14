@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blochezi sms-urile corespunzatoare listei negre"
+        android:id="@+id/sms_ln"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blochezi apelurile corespunzatoare listei negre"
+        android:id="@+id/call_ln"
+        android:layout_below="@+id/sms_ln"
+        android:layout_alignLeft="@+id/sms_ln"
+        android:layout_alignStart="@+id/sms_ln"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blochezi apelurile de la numere private"
+        android:id="@+id/private_nr_call"
+        android:layout_below="@+id/call_ln"
+        android:layout_alignLeft="@+id/call_ln"
+        android:layout_alignStart="@+id/call_ln"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blochezi apelurile de la numere ce nu le ai in lista de contacte"
+        android:id="@+id/block_call_no_list_contact"
+        android:layout_below="@+id/private_nr_call"
+        android:layout_alignLeft="@+id/private_nr_call"
+        android:layout_alignStart="@+id/private_nr_call"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blochezi sms-urile de la numere ce nu le ai in lista de contacte"
+        android:id="@+id/block_sms_no_list_contact"
+        android:layout_below="@+id/block_call_no_list_contact"
+        android:layout_alignLeft="@+id/block_call_no_list_contact"
+        android:layout_alignStart="@+id/block_call_no_list_contact"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blochezi sms-urile cu continut interzis"
+        android:id="@+id/block_sms_with_forbidden_content"
+        android:layout_below="@+id/block_sms_no_list_contact"
+        android:layout_alignLeft="@+id/block_sms_no_list_contact"
+        android:layout_alignStart="@+id/block_sms_no_list_contact"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Settings"
+        android:id="@+id/save_settings"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/block_sms_with_forbidden_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickSaveSettings"/>
+</RelativeLayout>

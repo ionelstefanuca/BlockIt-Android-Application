@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:id="@+id/textView6"
+        android:background="#beb8b8"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Numar telefon:"
+        android:id="@+id/sms_txt1"
+        android:background="#beb8b8"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:id="@+id/textView5"
+        android:background="#beb8b8"
+        android:layout_below="@+id/sms_txt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Un SMS are maxim 160 de caractere. Daca folosesti diacritice sau alte simboluri, textul initial va fi automat fragmentat in mai multe mesaje diferite, cu maximum 70 de caractere fiecare si vei fi taxat pentru fiecare SMS in parte."
+        android:id="@+id/sms_body"
+        android:background="#52c0df"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="45dp"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:minWidth="200dp" />
+
+    <EditText
+        android:id="@+id/re_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introdu Mesajul"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:maxLines="50"
+        android:layout_below="@+id/textureView"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginLeft="10dp" />
+
+    <TextureView
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:id="@+id/textureView"
+        android:background="#fc1919"
+        android:backgroundTint="#ff0606"
+        android:backgroundTintMode="src_in"
+        android:layout_below="@+id/sms_data_"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/re_sms"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/send_btn"
+        android:layout_alignTop="@+id/re_sms"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="TrimiteSMS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:id="@+id/sms_data_"
+        android:background="#52c0df"
+        android:textColor="#0f194a"
+        android:padding="10dp"
+        android:layout_below="@+id/sms_body"
+        android:layout_alignLeft="@+id/sms_body"
+        android:layout_alignStart="@+id/sms_body"
+        android:layout_alignRight="@+id/sms_body"
+        android:layout_alignEnd="@+id/sms_body"
+        android:textSize="10dp" />
+
+</RelativeLayout>

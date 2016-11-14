@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:shrinkColumns="2"
+    android:stretchColumns="2"
+    android:background="@drawable/x">
+
+    <Button
+        android:id="@+id/adaugaNumar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="adaugaNumar"
+        android:text="Adauga Numar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/space6"
+        android:layout_toRightOf="@+id/space7"
+        android:layout_toEndOf="@+id/space7"
+        android:background="@drawable/button_effect2"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/ListaNeagra_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Lista Neagra"
+        android:onClick="listaNeagra"
+        android:layout_below="@+id/adaugaNumar_btn"
+        android:layout_toRightOf="@+id/space7"
+        android:layout_alignRight="@+id/adaugaNumar_btn"
+        android:layout_alignEnd="@+id/adaugaNumar_btn"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_effect3"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Blocheaza SMS-uri"
+        android:layout_below="@+id/ListaNeagra_btn"
+        android:layout_toRightOf="@+id/space7"
+        android:layout_alignRight="@+id/ListaNeagra_btn"
+        android:layout_alignEnd="@+id/ListaNeagra_btn"
+        android:onClick="blocheazaSmsUri"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_effect1"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Vezi Istoric"
+        android:layout_below="@+id/button3"
+        android:layout_toLeftOf="@+id/space6"
+        android:layout_toRightOf="@+id/space7"
+        android:layout_toEndOf="@+id/space7"
+        android:onClick="istoric"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_effect4"
+        android:layout_marginTop="10dp" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/button4"
+        android:id="@+id/space6" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/button4"
+        android:id="@+id/space7" />
+
+</RelativeLayout>

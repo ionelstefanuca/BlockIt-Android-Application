@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nume: "
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/space5"
+        android:layout_toEndOf="@+id/space5" />
+
+    <EditText  android:id="@+id/nume" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/space5"
+        android:layout_alignRight="@+id/numar"
+        android:layout_alignEnd="@+id/numar" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Numar: "
+        android:id="@+id/textView3"
+        android:layout_below="@+id/nume"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText android:id="@+id/numar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_toLeftOf="@+id/space4"
+        android:layout_toStartOf="@+id/space4" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space4"
+        android:layout_alignBottom="@+id/numar" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/numar"
+        android:id="@+id/space5" />
+
+</RelativeLayout>
